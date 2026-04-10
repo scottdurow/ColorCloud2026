@@ -40,8 +40,8 @@ This side quest walks you through planning and building a **Power Apps Code App*
 
 1. When complete, review the generated plan file. It should cover data model usage, page designs, navigation, and implementation steps.
 
-   > [!TIP]
-   > The plan is non-deterministic — yours will differ from others. That's fine. The Developer agent reads whatever plan the Consultant produced.
+> [!TIP]
+> The plan is non-deterministic — yours will differ from others. That's fine. The Developer agent reads whatever plan the Consultant produced.
 
 ---
 
@@ -72,8 +72,8 @@ This side quest walks you through planning and building a **Power Apps Code App*
 
 1. This takes **15–25 minutes**. Let it work — check back periodically.
 
-   > [!NOTE]
-   > The agent will make its own decisions about component names, folder structure, and implementation details. The output varies every time. Focus on whether it builds and runs, not whether it matches a specific layout.
+> [!NOTE]
+> The agent will make its own decisions about component names, folder structure, and implementation details. The output varies every time. Focus on whether it builds and runs, not whether it matches a specific layout.
 
 ---
 

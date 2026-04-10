@@ -85,8 +85,8 @@ Before VS Code can connect, the Dataverse MCP server must be enabled for your en
 1. Select **Save & Close**.  
    ![Enable GitHub Copilot in Dataverse MCP](./assets/enable-githubcopilot-dataverse.png)
    
-   > [!TIP]
-   > By default, the Dataverse MCP server is enabled for Copilot Studio only. The **Advanced Settings** step is what allows non-Copilot Studio clients — like VS Code with GitHub Copilot — to connect. Without this step, VS Code will get authentication errors when trying to use the MCP server.
+> [!TIP]
+> By default, the Dataverse MCP server is enabled for Copilot Studio only. The **Advanced Settings** step is what allows non-Copilot Studio clients — like VS Code with GitHub Copilot — to connect. Without this step, VS Code will get authentication errors when trying to use the MCP server.
 
 ## ✅ Task 3 : Get your environment URL from Power Apps
 
@@ -107,8 +107,8 @@ You need your Dataverse instance URL to configure the MCP server connection in V
    
 1. Select **Copy details** to copy all session details to your clipboard — the Instance URL is included in the copied text.
 
-   > [!TIP]
-   > You can also just select and copy the Instance URL directly. The important thing is to get the base URL (e.g. `https://org1a2b3c4d.crm.dynamics.com`) — you'll use it in the next steps.
+> [!TIP]
+> You can also just select and copy the Instance URL directly. The important thing is to get the base URL (e.g. `https://org1a2b3c4d.crm.dynamics.com`) — you'll use it in the next steps.
 
 ## ✅ Task 4 : Import the sample solution using GitHub Copilot
 
@@ -128,14 +128,14 @@ Before you start, make sure Copilot asks for your approval before running termin
 
    This ensures that every tool call — file reads, writes, terminal commands — requires your explicit approval before it runs.
 
-   > [!NOTE]
-   > VS Code has several slash commands for controlling tool approval:
-   > - **`/autoApprove`** (or **`/yolo`**) — auto-approves all tool calls globally without confirmation dialogs
-   > - **`/disableAutoApprove`** (or **`/disableYolo`**) — turns auto-approve off, requiring manual confirmation
-   >
-   > You can also set the permission level using the **permissions picker** (shield icon) at the bottom of the chat input area: **Default Approvals**, **Bypass Approvals**, or **Autopilot** (which also auto-responds to questions).
-   >
-   > For this task, we want Default Approvals so you can see and approve each PAC CLI command before it runs.
+> [!NOTE]
+> VS Code has several slash commands for controlling tool approval:
+> - **`/autoApprove`** (or **`/yolo`**) — auto-approves all tool calls globally without confirmation dialogs
+> - **`/disableAutoApprove`** (or **`/disableYolo`**) — turns auto-approve off, requiring manual confirmation
+>
+> You can also set the permission level using the **permissions picker** (shield icon) at the bottom of the chat input area: **Default Approvals**, **Bypass Approvals**, or **Autopilot** (which also auto-responds to questions).
+>
+> For this task, we want Default Approvals so you can see and approve each PAC CLI command before it runs.
 
 ### 👉 Ask Copilot to import the solution
 
@@ -162,8 +162,8 @@ Before you start, make sure Copilot asks for your approval before running termin
    Review the command — it's creating a PAC CLI authentication profile pointed at your environment URL (extracted from the session details you pasted). Select **Allow** to run it.  
    ![Import solution](./assets/import-solution.png)
 
-   > [!NOTE]
-   > A browser window may open for interactive authentication. Sign in with the same account you use for Power Apps. This creates an auth profile that PAC CLI will use for all subsequent commands.
+> [!NOTE]
+> A browser window may open for interactive authentication. Sign in with the same account you use for Power Apps. This creates an auth profile that PAC CLI will use for all subsequent commands.
 
    **Step 2 — Import the solution:** Copilot will propose:
 
@@ -175,16 +175,16 @@ Before you start, make sure Copilot asks for your approval before running termin
 
 1. Watch the terminal output inline in the chat. You should see the import progress and eventually a success message.
 
-   > [!TIP]
-   > If the import fails, check:
-   > - The solution zip file exists at the specified path
-   > - You authenticated to the correct environment
-   > - The environment has Dataverse enabled (developer environments always do)
-   >
-   > You can ask Copilot to troubleshoot: *"The import failed — can you check what went wrong?"*
+> [!TIP]
+> If the import fails, check:
+> - The solution zip file exists at the specified path
+> - You authenticated to the correct environment
+> - The environment has Dataverse enabled (developer environments always do)
+>
+> You can ask Copilot to troubleshoot: *"The import failed — can you check what went wrong?"*
 
-   > [!NOTE]
-   > This is the pattern you'll use throughout the workshop — describe what you want to accomplish, provide the context (environment details, file paths), and let Copilot figure out the right commands. You reviewed and approved each step, so you always know what's happening. As you get more comfortable, you can switch to Bypass Approvals to skip the confirmation clicks.
+> [!NOTE]
+> This is the pattern you'll use throughout the workshop — describe what you want to accomplish, provide the context (environment details, file paths), and let Copilot figure out the right commands. You reviewed and approved each step, so you always know what's happening. As you get more comfortable, you can switch to Bypass Approvals to skip the confirmation clicks.
 
 ## ✅ Task 5 : Connect the Dataverse MCP server in VS Code
 
@@ -222,10 +222,10 @@ This is the agent-first approach — you give Copilot the information it needs a
 1. You may see a diff view showing the new `.vscode/mcp.json` file. **Review and accept** the changes.  
    ![New MCP Server config](./assets/new-mcp-server.png)
 
-   > [!TIP]
-   > This is a great example of the agent workflow — instead of learning the exact steps for a configuration task, you describe what you want and provide the context (session details). The agent figures out the rest. The Power Platform Full Stack Skills plugin includes knowledge about MCP server configuration, so Copilot knows the right URL format and file structure.
+> [!TIP]
+> This is a great example of the agent workflow — instead of learning the exact steps for a configuration task, you describe what you want and provide the context (session details). The agent figures out the rest. The Power Platform Full Stack Skills plugin includes knowledge about MCP server configuration, so Copilot knows the right URL format and file structure.
 
-1. **Accept** the new `mcp.json` file that Copilot has created.
+3. **Accept** the new `mcp.json` file that Copilot has created.
 
 1. Skip ahead to **Verify the connection** below.
 
@@ -255,8 +255,8 @@ This approach walks you through each step so you understand exactly what's being
 
    Press **Enter**.
 
-   > [!NOTE]
-   > We're using `/api/mcp_preview` (not `/api/mcp`) to get the Preview version of the MCP server. This matches the **Preview version** checkbox you enabled in Task 1. The Preview endpoint includes newer tools and capabilities that are still rolling out.
+> [!NOTE]
+> We're using `/api/mcp_preview` (not `/api/mcp`) to get the Preview version of the MCP server. This matches the **Preview version** checkbox you enabled in Task 1. The Preview endpoint includes newer tools and capabilities that are still rolling out.
 
 1. You'll be prompted for a **server name**. Enter `Dataverse` (or any name you prefer) and press **Enter**.
 
@@ -275,8 +275,8 @@ This approach walks you through each step so you understand exactly what's being
 
 1. You may be prompted to **sign in** — a browser window will open for Microsoft authentication. Sign in with the same account you use for Power Apps.
 
-   > [!NOTE]
-   > The MCP server uses your existing Microsoft identity for authentication. You sign in once, and VS Code maintains the session. If you're already signed into VS Code with the same Microsoft account, it may authenticate automatically.
+> [!NOTE]
+> The MCP server uses your existing Microsoft identity for authentication. You sign in once, and VS Code maintains the session. If you're already signed into VS Code with the same Microsoft account, it may authenticate automatically.
 
 ---
 
@@ -304,12 +304,12 @@ This approach walks you through each step so you understand exactly what's being
 1. Press **Enter**. Copilot will use the Dataverse MCP server to query your environment and return a list of tables.  
    ![Tables in the environment](./assets/tables-results.png)
 
-   > [!TIP]
-   > If you see an error about the MCP server not being available, check:
-   > - The MCP server URL is correct (ends with `/api/mcp_preview`)
-   > - The **Microsoft GitHub Copilot** client is enabled in the admin center Advanced Settings
-   > - You're signed into VS Code with the same account that has access to the environment
-   > - Try restarting VS Code if the connection was just configured
+> [!TIP]
+> If you see an error about the MCP server not being available, check:
+> - The MCP server URL is correct (ends with `/api/mcp_preview`)
+> - The **Microsoft GitHub Copilot** client is enabled in the admin center Advanced Settings
+> - You're signed into VS Code with the same account that has access to the environment
+> - Try restarting VS Code if the connection was just configured
 
 1. Try a few more queries to explore what the MCP server can do:
 
@@ -317,8 +317,8 @@ This approach walks you through each step so you understand exactly what's being
    Describe the Event table
    ```
 
-   > [!NOTE]
-   > The Dataverse MCP server gives Copilot **read and write** access to your environment's data through natural language. Notice how Copilot can see the custom tables that you imported in Task 3. In later labs, you'll use this connection when building generative pages and apps against these tables.
+> [!NOTE]
+> The Dataverse MCP server gives Copilot **read and write** access to your environment's data through natural language. Notice how Copilot can see the custom tables that you imported in Task 3. In later labs, you'll use this connection when building generative pages and apps against these tables.
 
 ## ✅ Task 6 : Create sample data using natural language
 
@@ -337,8 +337,8 @@ The event tables are empty after import. Instead of manually creating records in
    Press **Enter**. Your agent will likely ask you questions to confirm the data creation.  
    ![Agent checking](./assets/check-creation.png)
 
-   > [!TIP]
-   > This is just a suggestion — feel free to change the scenario to something that interests you.
+> [!TIP]
+> This is just a suggestion — feel free to change the scenario to something that interests you.
 
 1. Watch Copilot work through the process. It will:
    -  **Describe each table** to discover the columns, data types, and relationships (you'll see expandable MCP tool calls for each)
@@ -349,8 +349,8 @@ The event tables are empty after import. Instead of manually creating records in
    - Used the correct option set values for status fields
    - Created records in the right order to satisfy foreign key relationships
 
-   > [!NOTE]
-   > This is the power of the MCP server combined with Agent Mode — Copilot doesn't need you to tell it the column names, data types, or relationship structure. It queries the schema, understands the dependencies, and creates records in the correct order. You described the *intent* ("realistic event scheduling data for a Power Platform conference") and the agent figured out the *implementation*.
+> [!NOTE]
+> This is the power of the MCP server combined with Agent Mode — Copilot doesn't need you to tell it the column names, data types, or relationship structure. It queries the schema, understands the dependencies, and creates records in the correct order. You described the *intent* ("realistic event scheduling data for a Power Platform conference") and the agent figured out the *implementation*.
 
 ### 👉 Verify the data
 
@@ -362,8 +362,8 @@ The event tables are empty after import. Instead of manually creating records in
 
 1. You can also verify in the maker portal: go to [make.powerapps.com](https://make.powerapps.com), select **Tables** in the left navigation, find the **Event** table, and select **Data** to see the records.
 
-   > [!TIP]
-   > If Copilot created data you don't like, you can ask it to delete and recreate it: *"Delete all the sessions and create new ones with different topics and speakers."* The MCP server supports full CRUD operations.
+> [!TIP]
+> If Copilot created data you don't like, you can ask it to delete and recreate it: *"Delete all the sessions and create new ones with different topics and speakers."* The MCP server supports full CRUD operations.
 
 ## 🏁 What you learned
 

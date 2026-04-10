@@ -36,8 +36,8 @@ In this task you'll enter a prompt to generate a complete event management appli
 
 1. If you've already deployed the Schedule Builder page from Lab 3 and have a screenshot of it, you can attach it for design inspiration. Select the **Add images** button (the **+** icon to the left of the prompt text box) and choose your screenshot.
 
-   > [!TIP]
-   > Don't have a screenshot? Skip this step — the prompt alone is enough. Attaching an image just gives Vibe Apps extra visual context about the layout and style you want.
+> [!TIP]
+> Don't have a screenshot? Skip this step — the prompt alone is enough. Attaching an image just gives Vibe Apps extra visual context about the layout and style you want.
 
 ### 👉 Enter the event management prompt
 
@@ -73,8 +73,8 @@ In this task you'll enter a prompt to generate a complete event management appli
 
 1. Wait for all tasks to complete. This typically takes **5–10 minutes** — a perfect time to switch back to your other lab and check on agent progress.
 
-   > [!TIP]
-   > This is exactly the workflow the timetable suggests: kick off a Vibe Apps generation, switch back to your Copilot lab work, and check back when it's done.
+> [!TIP]
+> This is exactly the workflow the timetable suggests: kick off a Vibe Apps generation, switch back to your Copilot lab work, and check back when it's done.
 
 1. When generation is complete, you will see a summary from Copilot describing each page that was created. The app preview will show the **Dashboard** page with metric cards and charts.
 
@@ -88,8 +88,8 @@ In this task you'll enter a prompt to generate a complete event management appli
 
 1. Review the plan contents. You should see a **User Roles** section listing personas such as **Event Organizer** and **Session Coordinator**, each with user stories describing their needs.
 
-   > [!NOTE]
-   > The plan is generated from your prompt and describes the application from a user perspective. Compare this with Lab 3 — there you described business requirements directly to Copilot. Here, Vibe Apps creates the user stories for you.
+> [!NOTE]
+> The plan is generated from your prompt and describes the application from a user perspective. Compare this with Lab 3 — there you described business requirements directly to Copilot. Here, Vibe Apps creates the user stories for you.
 
 ### 👉 Review the data model
 
@@ -136,8 +136,8 @@ In this task you'll enter a prompt to generate a complete event management appli
 
 1. Select `power.config.json` to view the app configuration. Note this is the same technology as Lab 3 — a **Vite/React/TypeScript** project using **Fluent UI**.
 
-   > [!NOTE]
-   > Both Lab 3 (Gen Pages) and Vibe Apps generate React/TypeScript applications. The difference is in how you direct the process: Lab 3 gives you full control via GitHub Copilot in VS Code. Vibe Apps manages the entire workflow for you from a single conversation.
+> [!NOTE]
+> Both Lab 3 (Gen Pages) and Vibe Apps generate React/TypeScript applications. The difference is in how you direct the process: Lab 3 gives you full control via GitHub Copilot in VS Code. Vibe Apps manages the entire workflow for you from a single conversation.
 
 ### 👉 Try inline edits
 
@@ -149,8 +149,8 @@ In this task you'll enter a prompt to generate a complete event management appli
 
 1. Try selecting a heading or card element in the preview. Notice how the element becomes highlighted and the toolbar options update.
 
-   > [!TIP]
-   > Inline edits let you make targeted changes to individual UI elements — adjusting fonts, colors, or requesting specific changes — without affecting the rest of the app. This is something you can't do as easily in the external tooling approach.
+> [!TIP]
+> Inline edits let you make targeted changes to individual UI elements — adjusting fonts, colors, or requesting specific changes — without affecting the rest of the app. This is something you can't do as easily in the external tooling approach.
 
 1. Select the **Inline edits** toggle again to exit inline edit mode.
 
@@ -170,8 +170,8 @@ Try a quick iteration to see how fast Vibe Apps applies changes.
 
 1. Observe that the changes are applied **almost instantly** — Vibe Apps only regenerates the affected page, not the entire application.
 
-   > [!NOTE]
-   > Compare this iteration speed with Lab 3. In the Gen Pages approach, each iteration requires code generation → PAC CLI deploy → browser refresh. In Vibe Apps, changes apply in the preview immediately. The trade-off: Vibe Apps is faster to iterate, but you have less control over the generated code and deployment.
+> [!NOTE]
+> Compare this iteration speed with Lab 3. In the Gen Pages approach, each iteration requires code generation → PAC CLI deploy → browser refresh. In Vibe Apps, changes apply in the preview immediately. The trade-off: Vibe Apps is faster to iterate, but you have less control over the generated code and deployment.
 
 ---
 
@@ -189,8 +189,8 @@ If you want to see the app running against real Dataverse tables:
 
 1. When publishing is complete, select the **Play** button (▶) to open the published app in a new browser tab.
 
-   > [!NOTE]
-   > Since you selected Dev 2 — a separate environment from Labs 2–4 — the Vibe-generated tables won't conflict with the pre-built Event Schedule Designer tables.
+> [!NOTE]
+> Since you selected Dev 2 — a separate environment from Labs 2–4 — the Vibe-generated tables won't conflict with the pre-built Event Schedule Designer tables.
 
 ---
 

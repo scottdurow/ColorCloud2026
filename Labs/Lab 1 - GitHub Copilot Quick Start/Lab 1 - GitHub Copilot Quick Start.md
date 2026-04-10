@@ -44,10 +44,10 @@ In this task you'll use GitHub Copilot Chat to clone the workshop repository. Th
 
 1. Watch the command execute inline in the chat. You should see the `git clone` output appear directly below the command.
 
-   > [!NOTE]
-   > This is one of the core capabilities of Agent Mode — you describe an intent in natural language and the agent translates it into the right terminal command. Commands run **inline in the chat** so you can see everything in one place. If you want to see all terminals that agents have spawned, open the **Terminal** panel (`Ctrl+\``) and look for the hidden terminals menu — it lists all agent-created terminal sessions.
-   >
-   > You'll use this pattern throughout the workshop.
+> [!NOTE]
+> This is one of the core capabilities of Agent Mode — you describe an intent in natural language and the agent translates it into the right terminal command. Commands run **inline in the chat** so you can see everything in one place. If you want to see all terminals that agents have spawned, open the **Terminal** panel (`Ctrl+\``) and look for the hidden terminals menu — it lists all agent-created terminal sessions.
+>
+> You'll use this pattern throughout the workshop.
 
 ### 👉 Open the Wheels vs Doors project
 
@@ -59,10 +59,10 @@ In this task you'll use GitHub Copilot Chat to clone the workshop repository. Th
 
 1. After accepting the commands it wants to run, Copilot will run a command like `code c:\colorcloud\Samples\WheelsDoors -r` to reopen VS Code in the project folder.
 
-   > [!IMPORTANT]
-   > The WheelsDoors folder must be opened as the **workspace root** (not as a subfolder) so that VS Code discovers the custom agents inside `.github/agents/`. If you see a prompt to **Trust the authors**, select **Yes, I trust the authors**. You will be prompted that there is a running session - simply accept the opening of the new window.
+> [!IMPORTANT]
+> The WheelsDoors folder must be opened as the **workspace root** (not as a subfolder) so that VS Code discovers the custom agents inside `.github/agents/`. If you see a prompt to **Trust the authors**, select **Yes, I trust the authors**. You will be prompted that there is a running session - simply accept the opening of the new window.
 
-1. After VS Code reopens, you should see the following files in the **Explorer** panel on the left:  
+2. After VS Code reopens, you should see the following files in the **Explorer** panel on the left:  
    ![Folder structure](./assets/wheels-doors-files.png)
    
    ```
@@ -76,8 +76,8 @@ In this task you'll use GitHub Copilot Chat to clone the workshop repository. Th
          SKILL.md
    ```
    
-   > [!TIP]
-   > If you don't see the `.github` folder, select the **...** menu at the top of the Explorer panel and ensure **Show Hidden Files** is enabled.
+> [!TIP]
+> If you don't see the `.github` folder, select the **...** menu at the top of the Explorer panel and ensure **Show Hidden Files** is enabled.
 
 ## ✅ Task 2 : Configure GitHub Copilot Chat
 
@@ -89,8 +89,8 @@ In this task you'll select the right model and permissions before running the de
 
 1. Select the model picker and choose **Claude Opus 4.6** from the list. Opus is excellent for complex multi-step tasks and creative writing — perfect for running a structured debate with sub-agents.
 
-   > [!TIP]
-   > Different models have different strengths. **Opus 4.6** is the best for complex orchestration and creative tasks. **Sonnet** is faster but less thorough. **GPT-4.1** is a good all-rounder. For this lab, Opus will give you the most entertaining debate.
+> [!TIP]
+> Different models have different strengths. **Opus 4.6** is the best for complex orchestration and creative tasks. **Sonnet** is faster but less thorough. **GPT-4.1** is a good all-rounder. For this lab, Opus will give you the most entertaining debate.
 
 ### 👉 Enable Autopilot
 
@@ -101,8 +101,8 @@ In this task you'll select the right model and permissions before running the de
    In Autopilot mode, the agent auto-approves all tool calls (file reads, file writes, terminal commands) **and** answers its own questions — full autonomy. This means the debate will run from start to finish without you needing to click "Accept" on every action.  
    ![Approve Autopilot](./assets/approve-autopilot.png)
    
-   > [!IMPORTANT]
-   > Autopilot gives Copilot **full control** to read files, create files, run terminal commands, and make decisions without asking. You can stop the agent at any time by selecting **Stop** in the chat panel. For a structured debate like this, Autopilot is ideal — you want to sit back and watch.
+> [!IMPORTANT]
+> Autopilot gives Copilot **full control** to read files, create files, run terminal commands, and make decisions without asking. You can stop the agent at any time by selecting **Stop** in the chat panel. For a structured debate like this, Autopilot is ideal — you want to sit back and watch.
 
 ## ✅ Task 3 : Run the debate
 
@@ -120,8 +120,8 @@ This is the fun part. You'll select the Debate Moderator agent and kick off the 
 1. Select **Debate Moderator**.  
    ![Select agent](./assets/select-agent.png)
    
-   > [!TIP]
-   > If you don't see the custom agents, make sure VS Code has the WheelsDoors folder open as the workspace root. The `.github/agents/` folder must be at the root of the open folder for VS Code to discover them.
+> [!TIP]
+> If you don't see the custom agents, make sure VS Code has the WheelsDoors folder open as the workspace root. The `.github/agents/` folder must be at the root of the open folder for VS Code to discover them.
 
 ### 👉 Start the debate
 
@@ -152,13 +152,13 @@ While the debate runs, take a moment to understand **what** agents and skills ar
 
 1. Look at the `tools` line in the frontmatter: `tools: ['read', 'search']`. Now open **debate-moderator.agent.md** and compare its tools: `tools: ['read', 'search', 'edit', 'agent']`. Notice the difference — the debater agents can only **read** and **search** files. They **cannot edit** files or **call other agents**. Only the Moderator has the `edit` tool (to write the transcript) and the `agent` tool (to call sub-agents).
 
-   > [!NOTE]
-   > **Tool restrictions are how you control what agents can do.** By giving the debaters only `read` and `search`, they can load the research skill but can't modify files or spawn other agents. The Moderator gets `edit` (to write the transcript) and `agent` (to orchestrate sub-agents). This principle of least privilege applies to real development agents too — a planning agent might only get `read` and `search`, while an implementation agent gets `edit` and `execute`.
+> [!NOTE]
+> **Tool restrictions are how you control what agents can do.** By giving the debaters only `read` and `search`, they can load the research skill but can't modify files or spawn other agents. The Moderator gets `edit` (to write the transcript) and `agent` (to orchestrate sub-agents). This principle of least privilege applies to real development agents too — a planning agent might only get `read` and `search`, while an implementation agent gets `edit` and `execute`.
 
 1. Now open **team-doors.agent.md** and notice the contrasting personality — "Big Dave from Swindon", a plumber with very different energy and speaking style.
 
-   > [!NOTE]
-   > **This is what an agent is:** a text file that defines a persona — how the AI should approach problems, what voice it should use, what rules it must follow. The same underlying model (Opus 4.6) plays both characters. The agent file shapes the output.
+> [!NOTE]
+> **This is what an agent is:** a text file that defines a persona — how the AI should approach problems, what voice it should use, what rules it must follow. The same underlying model (Opus 4.6) plays both characters. The agent file shapes the output.
 
 ### 👉 Read the skill file
 
@@ -171,8 +171,8 @@ While the debate runs, take a moment to understand **what** agents and skills ar
    - **Wild card arguments** — contested territory like revolving doors, Lego packaging, metaphorical doors
    - **Research rules** — instructions for how agents should use the data ("Cite specifics — never say 'there are lots of wheels'")
 
-   > [!NOTE]
-   > **This is what a skill is:** a knowledge file that provides domain expertise. Skills don't have a personality — they're reference material that agents load when they need specific facts. Both the Wheels and Doors agents read the **same** skill, but each delivers the content in their own voice.
+> [!NOTE]
+> **This is what a skill is:** a knowledge file that provides domain expertise. Skills don't have a personality — they're reference material that agents load when they need specific facts. Both the Wheels and Doors agents read the **same** skill, but each delivers the content in their own voice.
 
 ### 👉 Read the orchestrator agent
 
@@ -183,8 +183,8 @@ While the debate runs, take a moment to understand **what** agents and skills ar
    - Each step includes the **exact prompt** to send to each sub-agent via `runSubagent`
    - It's instructed to write the final transcript to `debate-transcript.md`
 
-   > [!NOTE]
-   > **This is the orchestrator pattern:** one agent managing the flow and calling specialist agents for specific tasks. The Moderator doesn't argue — it coordinates. This is the same pattern used in real development workflows where a Consultant agent calls a Developer, a Code Reviewer, and a Tester.
+> [!NOTE]
+> **This is the orchestrator pattern:** one agent managing the flow and calling specialist agents for specific tasks. The Moderator doesn't argue — it coordinates. This is the same pattern used in real development workflows where a Consultant agent calls a Developer, a Code Reviewer, and a Tester.
 
 ### 👉 Watch the debate unfold
 
@@ -195,13 +195,13 @@ Once you've explored the files, switch back to the Copilot Chat panel and watch 
 1. **Round 1 — Opening Arguments** — The Moderator calls **Team Wheels** as a sub-agent. You will see a collapsible node appear in the chat:  
    ![Expand child agents](./assets/expand-debate-child-agent.png)
    
-   > [!TIP]
-   > **Expand the sub-agent nodes!** Click the arrow (▸) next to each sub-agent call to expand it. Inside you'll see:
-   > - The **prompt** the Moderator sent to the sub-agent
-   > - The sub-agent **reading the skill file** (fetching its research ammunition)
-   > - The **full argument** the sub-agent delivered back
-   >
-   > This is one of the most important things to understand about agent orchestration — you can inspect exactly what was sent to each agent and what came back.
+> [!TIP]
+> **Expand the sub-agent nodes!** Click the arrow (▸) next to each sub-agent call to expand it. Inside you'll see:
+> - The **prompt** the Moderator sent to the sub-agent
+> - The sub-agent **reading the skill file** (fetching its research ammunition)
+> - The **full argument** the sub-agent delivered back
+>
+> This is one of the most important things to understand about agent orchestration — you can inspect exactly what was sent to each agent and what came back.
    
 1. After Team Wheels delivers its argument, the Moderator adds commentary, then calls **Team Doors** for their opening argument. Expand that node too.
 
@@ -211,7 +211,7 @@ Once you've explored the files, switch back to the Copilot Chat panel and watch 
 
 1. **Transcript** — The Moderator writes the full debate to `debate-transcript.md` in the workspace root.
 
-   > [!NOTE]
+> [!NOTE]
 > AI output is **non-deterministic**. Every time you run the debate, the arguments, the commentary, and even the winner will be different. Run it twice and you may get different verdicts. This is normal — the agents are creative, not scripted.
 
 ### 👉 Accept the new file
@@ -223,8 +223,8 @@ Once you've explored the files, switch back to the Copilot Chat panel and watch 
 1. Select **Accept** (or **Keep**) to save the new file to the workspace.  
    ![Accept transcript](./assets/accept-transcript.png)
    
-   > [!TIP]
-   > In your own development work, this is how you'll interact with agent-generated code — Copilot proposes file changes, you see the diff, and you choose to accept, reject, or modify them. The debate transcript is a low-stakes way to experience this workflow.
+> [!TIP]
+> In your own development work, this is how you'll interact with agent-generated code — Copilot proposes file changes, you see the diff, and you choose to accept, reject, or modify them. The debate transcript is a low-stakes way to experience this workflow.
 
 ### 👉 Review the transcript
 
@@ -242,8 +242,8 @@ Now it's your turn. You'll use the built-in `/create-agent` and `/create-skill` 
 
 1. Change the agent selector to **Agent** mode. Change the permissions from **Autopilot** to **Bypass Approvals** using the permissions selector at the bottom of the chat input area. In Bypass Approvals mode, tool calls (file reads, writes, terminal commands) run without clicking approve, but the agent will still **ask you questions** before proceeding — which is exactly what we want for `/create-agent` and `/create-skill` since they interview you.
 
-   > [!NOTE]
-   > **Autopilot vs Bypass Approvals:** In Autopilot, the agent answers its own questions and runs fully autonomously. In Bypass Approvals, tools run without confirmation but the agent still asks *you* for decisions. For creating agents and skills, Bypass Approvals is better — you want to answer the clarifying questions yourself to shape the output.
+> [!NOTE]
+> **Autopilot vs Bypass Approvals:** In Autopilot, the agent answers its own questions and runs fully autonomously. In Bypass Approvals, tools run without confirmation but the agent still asks *you* for decisions. For creating agents and skills, Bypass Approvals is better — you want to answer the clarifying questions yourself to shape the output.
 
 1. In the chat input box, type:
 
@@ -256,8 +256,8 @@ Now it's your turn. You'll use the built-in `/create-agent` and `/create-skill` 
 
 1. When the file appears, VS Code will show it in the editor with a **diff view** showing the new content in green. **Review the content** — check that `tools` includes `edit` alongside `read` and `search`.
 
-   > [!NOTE]
-   > `/create-agent` is a built-in slash command that scaffolds an `.agent.md` file with proper YAML frontmatter, personality, tools, and rules — all in the right location. Notice we specifically asked for the `edit` tool — without it, Chef Ramsay could only *complain* about the code but couldn't *fix* it.
+> [!NOTE]
+> `/create-agent` is a built-in slash command that scaffolds an `.agent.md` file with proper YAML frontmatter, personality, tools, and rules — all in the right location. Notice we specifically asked for the `edit` tool — without it, Chef Ramsay could only *complain* about the code but couldn't *fix* it.
 1. Select **Accept** to save the new file.
 
 ### 👉 Create the coding standards skill
@@ -287,11 +287,11 @@ The skill is where you define the **specific rules** Chef Ramsay enforces. This 
 
 1. Copilot creates the skill folder (`.github/skills/coding-standards/`) and the `SKILL.md` file inside it. **Review and accept** the new file.
 
-   > [!NOTE]
-   > `/create-skill` generates the correct folder structure and `SKILL.md` with proper YAML frontmatter automatically. The folder name must match the `name` field in the frontmatter — the slash command handles this for you.
+> [!NOTE]
+> `/create-skill` generates the correct folder structure and `SKILL.md` with proper YAML frontmatter automatically. The folder name must match the `name` field in the frontmatter — the slash command handles this for you.
 
-   > [!TIP]
-   > Open the generated `SKILL.md` and skim through it. Every rule has a BAD and GOOD example. You should also see `vote-counter.ps1` in the workspace root — it violates **most of these rules**. That's deliberate. Chef Ramsay is about to have a field day.
+> [!TIP]
+> Open the generated `SKILL.md` and skim through it. Every rule has a BAD and GOOD example. You should also see `vote-counter.ps1` in the workspace root — it violates **most of these rules**. That's deliberate. Chef Ramsay is about to have a field day.
 
 ### 👉 Wire the skill into the agent
 
@@ -313,8 +313,8 @@ The skill is where you define the **specific rules** Chef Ramsay enforces. This 
 
 1. Select the **agent picker** dropdown and choose **Chef Ramsay** (your new agent).
 
-   > [!TIP]
-   > If Chef Ramsay doesn't appear in the agent picker, check that the `.agent.md` file is in `.github/agents/` and that the YAML frontmatter has a valid `name` property.
+> [!TIP]
+> If Chef Ramsay doesn't appear in the agent picker, check that the `.agent.md` file is in `.github/agents/` and that the YAML frontmatter has a valid `name` property.
 
 1. Before typing your prompt, you need to tell the agent *which file* to review. There are two ways to add a file reference:
 
@@ -323,7 +323,7 @@ The skill is where you define the **specific rules** Chef Ramsay enforces. This 
 
    You should see a chip appear in the input box showing `vote-counter.ps1` as an attached reference.
 
-   > [!NOTE]
+> [!NOTE]
 > Adding file references with `#` or drag-and-drop is how you give Copilot targeted context. Instead of asking it to search the whole workspace, you point it at exactly the file (or files) you want it to work with. This works for any agent — not just Chef Ramsay.
 
 ### 👉 Ask for a review and fix
@@ -356,8 +356,8 @@ The skill is where you define the **specific rules** Chef Ramsay enforces. This 
 
 1. Open `vote-counter.ps1` in the editor and review the improved code. Notice the changes — the agent should have addressed the code quality issues it found.
 
-   > [!IMPORTANT]
-   > This is the key difference between agents with and without the `edit` tool. The debate agents (Team Wheels, Team Doors) only had `read` and `search` — they could load information but couldn't modify files. Chef Ramsay has `edit`, so it can fix problems directly. When you build agents for real work, choosing the right tools is a critical design decision.
+> [!IMPORTANT]
+> This is the key difference between agents with and without the `edit` tool. The debate agents (Team Wheels, Team Doors) only had `read` and `search` — they could load information but couldn't modify files. Chef Ramsay has `edit`, so it can fix problems directly. When you build agents for real work, choosing the right tools is a critical design decision.
 
 ### 👉 Bonus: Try your own agent idea
 

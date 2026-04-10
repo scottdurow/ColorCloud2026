@@ -32,8 +32,8 @@ You'll work in a dedicated folder for this lab to keep the plugin project separa
 
 1. Select **Continue** to let Copilot run the commands. VS Code will reopen with the new empty folder as the workspace root.
 
-   > [!TIP]
-   > If VS Code asks you to trust the folder, select **Yes, I trust the authors**.
+> [!TIP]
+> If VS Code asks you to trust the folder, select **Yes, I trust the authors**.
 
 ### 👉 Verify PAC CLI authentication
 
@@ -53,8 +53,8 @@ You'll work in a dedicated folder for this lab to keep the plugin project separa
 
 1. Select **[Power Platform] Developer**.
 
-   > [!TIP]
-   > If you don't see the Power Platform agents, make sure the **Power Platform Full Stack Skills** plugin is installed (Lab 1, Task 1).
+> [!TIP]
+> If you don't see the Power Platform agents, make sure the **Power Platform Full Stack Skills** plugin is installed (Lab 1, Task 1).
 
 1. Set the permissions to **Bypass Approvals**, and ask the Developer agent:
 
@@ -64,8 +64,8 @@ You'll work in a dedicated folder for this lab to keep the plugin project separa
 
 1. The agent will check for the .NET SDK (the toolchain used to compile plugin code), PAC CLI, and other prerequisites. If anything is missing, let the agent install it — it knows what's needed.
 
-   > [!NOTE]
-   > Don't worry about the specific version numbers or framework details. The agent will configure everything correctly. You just need to confirm the prerequisites are installed.
+> [!NOTE]
+> Don't worry about the specific version numbers or framework details. The agent will configure everything correctly. You just need to confirm the prerequisites are installed.
 
 ## ✅ Task 2 : Provide the plugin requirements
 
@@ -77,8 +77,8 @@ This is where the real work happens. You'll give the Developer agent the full re
 
 1. Keep the permissions on **Bypass Approvals** — the agent will need to run many terminal commands (dotnet build, PowerShell scripts) and you don't want to approve each one individually.
 
-   > [!IMPORTANT]
-   > **Bypass Approvals** auto-approves tool calls but still asks you questions when the agent needs clarification. Use **Autopilot** if you want the agent to also answer its own questions — full autonomy. For this lab, Bypass Approvals is recommended so you can answer any questions the agent has about the requirements.
+> [!IMPORTANT]
+> **Bypass Approvals** auto-approves tool calls but still asks you questions when the agent needs clarification. Use **Autopilot** if you want the agent to also answer its own questions — full autonomy. For this lab, Bypass Approvals is recommended so you can answer any questions the agent has about the requirements.
 
 ### 👉 Provide the requirements
 
@@ -134,15 +134,15 @@ This is where the real work happens. You'll give the Developer agent the full re
 
 1. Press **Enter** and watch the agent work.
 
-   > [!NOTE]
-   > This is a large, multi-step prompt. The Developer agent will break it down into tasks and work through them autonomously. Expect it to:
-   > - Create the C# plugin project with the correct assembly name and signing
-   > - Write the overlap validation logic
-   > - Build the project to verify it compiles
-   > - Create the deployment PowerShell script
-   > - Create the test script
-   > - Run the deployment
-   > - Run the tests to verify
+> [!NOTE]
+> This is a large, multi-step prompt. The Developer agent will break it down into tasks and work through them autonomously. Expect it to:
+> - Create the C# plugin project with the correct assembly name and signing
+> - Write the overlap validation logic
+> - Build the project to verify it compiles
+> - Create the deployment PowerShell script
+> - Create the test script
+> - Run the deployment
+> - Run the tests to verify
 
 ## ✅ Task 3 : Watch the agent work
 
@@ -231,8 +231,8 @@ Once the agent has successfully deployed and tested the plugin, take a few minut
    | An overlap check (comparing start and end times) | This is the core business logic — the formula that detects conflicts |
    | A section that throws an error | This is what blocks the operation and shows the error message to the user |
 
-   > [!TIP]
-   > Every Dataverse plugin follows the same basic pattern: look at what's being changed → check it against existing data → block it if the change breaks a rule. Once you've seen one plugin, you can recognise the pattern in any other.
+> [!TIP]
+> Every Dataverse plugin follows the same basic pattern: look at what's being changed → check it against existing data → block it if the change breaks a rule. Once you've seen one plugin, you can recognise the pattern in any other.
 
 ### 👉 Review the deployment script
 
@@ -243,8 +243,8 @@ Once the agent has successfully deployed and tested the plugin, take a few minut
    - It uses your existing login — no passwords stored in the script
    - It's safe to re-run — it won't create duplicates
 
-   > [!NOTE]
-   > The script configures the plugin to run **before** the record is saved (called "Pre-Operation"). This means if the plugin detects a conflict, the save is cancelled entirely — the conflicting record never gets created. The user sees the error immediately.
+> [!NOTE]
+> The script configures the plugin to run **before** the record is saved (called "Pre-Operation"). This means if the plugin detects a conflict, the save is cancelled entirely — the conflicting record never gets created. The user sees the error immediately.
 
 ### 👉 Review the test script
 
@@ -280,8 +280,8 @@ Now verify the plugin works through the app UI, not just through scripts. If you
 
 1. You should see an **error message** from the plugin — it will name both conflicting sessions and their time ranges, and the second session will **not** be saved.
 
-   > [!NOTE]
-   > This is exactly the scenario that server-side validation is designed for. Tab 2 had no way of knowing that Tab 1 had already filled that slot — but the plugin on the server checked at the moment of save and caught the conflict. No client-side JavaScript could have prevented this.
+> [!NOTE]
+> This is exactly the scenario that server-side validation is designed for. Tab 2 had no way of knowing that Tab 1 had already filled that slot — but the plugin on the server checked at the moment of save and caught the conflict. No client-side JavaScript could have prevented this.
 
 ### 👉 Alternative: test via the Schedule Slots view
 

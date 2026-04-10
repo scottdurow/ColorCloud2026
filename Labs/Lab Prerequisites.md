@@ -51,8 +51,8 @@ However, for the best experience we recommend upgrading to **GitHub Copilot Pro*
 
 1. If you are on the **Free** plan and want to upgrade, select **Start free trial** or **Upgrade to Pro** on the Copilot settings page. The trial gives you full Pro access for 30 days at no cost.
 
-   > [!TIP]
-   > If you only want to use Pro for this workshop, you can cancel the trial after the event and keep the free tier.
+> [!TIP]
+> If you only want to use Pro for this workshop, you can cancel the trial after the event and keep the free tier.
 
 ## ✅ Get a Microsoft 365 account
 
@@ -64,10 +64,10 @@ You need a Microsoft 365 account to access Power Platform. If you already have o
 
 1. Walk through the guided form to fill in your subscription details, account details, and payment information.
 
-   > [!NOTE]
-   > A credit card is required to start the free trial, but you will not be charged during the trial period. You can cancel before the trial ends if you do not wish to continue.
+> [!NOTE]
+> A credit card is required to start the free trial, but you will not be charged during the trial period. You can cancel before the trial ends if you do not wish to continue.
 
-1. Once you have your new account, sign in.
+4. Once you have your new account, sign in.
 
    You now have a Microsoft 365 tenant. Make a note of the username and password — you will use these throughout the workshop.
 
@@ -81,10 +81,10 @@ It's always good to have a separate browser profile for workshops like this. Thi
 
 1. At the bottom of the profile list, hover over **Other profiles** and then select **Set up new work profile**.
 
-   > [!IMPORTANT]
-   > Select **Set up new work profile** not **Set up new personal profile**.
+> [!IMPORTANT]
+> Select **Set up new work profile** not **Set up new personal profile**.
 
-1. Select **Add**.
+4. Select **Add**.
 
    This will open a new browser window on your taskbar.
 
@@ -105,10 +105,10 @@ Using the new browser profile, log in to Power Apps.
 
 1. In the new browser profile, navigate to [make.powerapps.com](https://make.powerapps.com).
 
-   > [!IMPORTANT]
-   > Make sure you use the new browser profile, instead of an existing profile.
+> [!IMPORTANT]
+> Make sure you use the new browser profile, instead of an existing profile.
 
-1. Sign in with the **Microsoft 365 account** you created earlier.
+2. Sign in with the **Microsoft 365 account** you created earlier.
 
 1. If you're prompted to stay signed in, check **Don't show this again**, and select **Yes**.
 
@@ -277,8 +277,8 @@ The Power Platform Tools extension provides the PAC CLI and other tools for inte
    pac auth create --deviceCode
    ```
 
-   > [!NOTE]
-   > If you see an error then close any existing terminals and open a new one using `` Ctrl+Shift+` ``.
+> [!NOTE]
+> If you see an error then close any existing terminals and open a new one using `` Ctrl+Shift+` ``.
 
 1. Copy the `https://microsoft.com/devicelogin` link and paste it into the **browser profile window that you created earlier**.
 
@@ -304,10 +304,10 @@ The Power Platform Tools extension provides the PAC CLI and other tools for inte
 
 1. In VS Code, expand the **Power Platform** panel in the left sidebar. If you do not see the **UNIVERSAL** profile, hover over the **AUTH PROFILES** area and select **Refresh**.
 
-   > [!IMPORTANT]
-   > If you do not see the Power Platform extension icon in the sidebar, press `Ctrl + Shift + P`, type `Developer: Reload Window` and press **Enter**.
+> [!IMPORTANT]
+> If you do not see the Power Platform extension icon in the sidebar, press `Ctrl + Shift + P`, type `Developer: Reload Window` and press **Enter**.
 
-1. Under your auth profile, locate your developer environment and select the **Star icon** (**Select Environment**). The environment should then have a filled star next to it.
+2. Under your auth profile, locate your developer environment and select the **Star icon** (**Select Environment**). The environment should then have a filled star next to it.
 
 1. Verify your connection by running:
 

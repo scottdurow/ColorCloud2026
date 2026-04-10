@@ -38,8 +38,8 @@ You'll work in a dedicated folder for this lab. The gen pages skill generates co
 
 1. Select **Continue** to let Copilot run the commands. VS Code will reopen with the new empty folder as the workspace root.
 
-   > [!TIP]
-   > If VS Code asks you to trust the folder, select **Yes, I trust the authors**.
+> [!TIP]
+> If VS Code asks you to trust the folder, select **Yes, I trust the authors**.
 
 ## ✅ Task 2 : Verify prerequisites and authenticate
 
@@ -57,13 +57,13 @@ The gen pages skill requires PAC CLI and Node.js. Let's verify everything is set
 
 1. Copilot will run the commands to check the current auth profile, and login if needed.
 
-   > [!TIP]
-   > If you have problems authenticating, you can ask Copilot to:
-   >
-   > ```text
-   > Authenticate to my environment using pac auth create --deviceCode --environment https://<yourorg>.crm.dynamics.com
-   > ```
-   > Replace the URL with your actual environment URL from Lab 2.
+> [!TIP]
+> If you have problems authenticating, you can ask Copilot to:
+>
+> ```text
+> Authenticate to my environment using pac auth create --deviceCode --environment https://<yourorg>.crm.dynamics.com
+> ```
+> Replace the URL with your actual environment URL from Lab 2.
 
 ### 👉 List the model-driven apps
 
@@ -99,11 +99,11 @@ The gen pages skill can automatically verify your deployed page by opening it in
    Is the Playwright MCP server connected?
    ```
 
-   > [!NOTE]
-   > The Playwright MCP server lets the agent open a real browser, navigate to URLs, take screenshots, and interact with the page. The gen pages skill uses this to verify that deployed pages render correctly — it's the automated QA step in the generate → deploy → verify → fix loop.
+> [!NOTE]
+> The Playwright MCP server lets the agent open a real browser, navigate to URLs, take screenshots, and interact with the page. The gen pages skill uses this to verify that deployed pages render correctly — it's the automated QA step in the generate → deploy → verify → fix loop.
 
-   > [!IMPORTANT]
-   > When the agent opens the Playwright browser, it launches a **separate browser session** that doesn't share your existing browser profile's cookies. You will need to **sign in with your Microsoft account** when prompted. Watch for the sign-in prompt and complete it manually — the agent will wait and then continue.
+> [!IMPORTANT]
+> When the agent opens the Playwright browser, it launches a **separate browser session** that doesn't share your existing browser profile's cookies. You will need to **sign in with your Microsoft account** when prompted. Watch for the sign-in prompt and complete it manually — the agent will wait and then continue.
 
 ## ✅ Task 4 : Generate the schedule builder page
 
@@ -133,13 +133,13 @@ The gen pages skill follows a structured workflow. Watch for each phase:
 
 1. **Schema generation** — Copilot reads the actual column names from your Dataverse tables so it knows exactly what fields exist. This is the critical step — the skill **never guesses** column names.
 
-   > [!NOTE]
-   > Custom table columns have unpredictable prefixed names (like `esd_sessiontitle` or `cr69c_starttime`). By reading the schema first, Copilot avoids the #1 source of errors.
+> [!NOTE]
+> Custom table columns have unpredictable prefixed names (like `esd_sessiontitle` or `cr69c_starttime`). By reading the schema first, Copilot avoids the #1 source of errors.
 
 1. **Code generation** — Copilot generates the page code, including the layout, data queries, and interactive scheduling logic. You'll see a `.tsx` file appear in the workspace.
 
-   > [!TIP]
-   > You don't need to understand the code. The skill handles the technical details — React components, styling, data access — so you can focus on describing what you want the page to do.
+> [!TIP]
+> You don't need to understand the code. The skill handles the technical details — React components, styling, data access — so you can focus on describing what you want the page to do.
 
 1. **Deployment** — Copilot deploys the page using PAC CLI:
 
@@ -147,13 +147,13 @@ The gen pages skill follows a structured workflow. Watch for each phase:
    pac model genpage upload --app-id <app-id> --code-file schedule-builder.tsx --name "Schedule Builder" --data-sources "esd_event,esd_session,esd_room,esd_scheduleslot" --add-to-sitemap
    ```
 
-   > [!TIP]
-   > The `--add-to-sitemap` flag adds the page to the model-driven app's left navigation automatically. Without it, the page would be deployed but not visible in the app's navigation.
+> [!TIP]
+> The `--add-to-sitemap` flag adds the page to the model-driven app's left navigation automatically. Without it, the page would be deployed but not visible in the app's navigation.
 
 1. **Browser verification** — Since the Playwright MCP server is connected (Task 3), Copilot opens the deployed page in a browser to verify it loads correctly. You'll see screenshots in the chat.
 
-   > [!IMPORTANT]
-   > When the Playwright browser opens, you'll need to **sign in with your Microsoft account** — the Playwright session doesn't share your existing browser cookies. Complete the sign-in when prompted, then let the agent continue. If sign-in fails or times out, don't worry — you can always verify the page manually in the browser.
+> [!IMPORTANT]
+> When the Playwright browser opens, you'll need to **sign in with your Microsoft account** — the Playwright session doesn't share your existing browser cookies. Complete the sign-in when prompted, then let the agent continue. If sign-in fails or times out, don't worry — you can always verify the page manually in the browser.
 
 ### 👉 Review the deployed page
 
@@ -170,8 +170,8 @@ The gen pages skill follows a structured workflow. Watch for each phase:
    - Unscheduled sessions in a sidebar
    - Any previously scheduled sessions shown in the grid
 
-   > [!NOTE]
-   > The first generation may not be perfect — the layout might need tweaking, the colors might not be ideal, or the interaction might not work exactly as described. That's normal and expected. The next task is all about iterating.
+> [!NOTE]
+> The first generation may not be perfect — the layout might need tweaking, the colors might not be ideal, or the interaction might not work exactly as described. That's normal and expected. The next task is all about iterating.
 
 ## ✅ Task 5 : Iterate on the page
 
@@ -201,8 +201,8 @@ This is where generative pages really shine — you can iterate through natural 
 
 1. Test in the browser — select a session from the sidebar, click an empty time slot, and verify the session appears in the grid. Click a scheduled session to remove it. Refresh the page to confirm changes persisted.
 
-   > [!NOTE]
-   > Each iteration follows the same cycle: describe the change → Copilot updates the code → redeploy → verify in browser. The skill handles the technical details automatically — you focus on describing what you want.
+> [!NOTE]
+> Each iteration follows the same cycle: describe the change → Copilot updates the code → redeploy → verify in browser. The skill handles the technical details automatically — you focus on describing what you want.
 
 ### 👉 Bonus iterations (if time allows)
 
@@ -231,15 +231,15 @@ You don't need to understand every line, but it's worth taking a quick look at w
    - It references your **actual Dataverse column names** (the ones with prefixes like `esd_sessiontitle`) — not guesses
    - It uses **Fluent UI** — the same design system as Microsoft 365 — so the page looks native inside the model-driven app
 
-   > [!NOTE]
-   > You don't need to be able to write this code. The key takeaway is that Copilot generated production-quality code from your plain English description — and you can always ask it to change anything by describing what you want differently.
+> [!NOTE]
+> You don't need to be able to write this code. The key takeaway is that Copilot generated production-quality code from your plain English description — and you can always ask it to change anything by describing what you want differently.
 
 ### 👉 Open RuntimeTypes.ts
 
 1. Open `RuntimeTypes.ts` and skim through it. This is the schema file that was generated from your Dataverse metadata — it's how Copilot knew the correct column names.
 
-   > [!TIP]
-   > If you add columns to a table later, the skill regenerates this file automatically so the code always stays in sync with your data model.
+> [!TIP]
+> If you add columns to a table later, the skill regenerates this file automatically so the code always stays in sync with your data model.
 
 ## 🏁 What you learned
 
