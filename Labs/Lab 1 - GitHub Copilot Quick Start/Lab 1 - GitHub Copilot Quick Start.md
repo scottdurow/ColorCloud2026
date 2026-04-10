@@ -155,7 +155,7 @@ While the debate runs, take a moment to understand **what** agents and skills ar
 > [!NOTE]
 > **Tool restrictions are how you control what agents can do.** By giving the debaters only `read` and `search`, they can load the research skill but can't modify files or spawn other agents. The Moderator gets `edit` (to write the transcript) and `agent` (to orchestrate sub-agents). This principle of least privilege applies to real development agents too — a planning agent might only get `read` and `search`, while an implementation agent gets `edit` and `execute`.
 
-1. Now open **team-doors.agent.md** and notice the contrasting personality — "Big Dave from Swindon", a plumber with very different energy and speaking style.
+4. Now open **team-doors.agent.md** and notice the contrasting personality — "Big Dave from Swindon", a plumber with very different energy and speaking style.
 
 > [!NOTE]
 > **This is what an agent is:** a text file that defines a persona — how the AI should approach problems, what voice it should use, what rules it must follow. The same underlying model (Opus 4.6) plays both characters. The agent file shapes the output.
