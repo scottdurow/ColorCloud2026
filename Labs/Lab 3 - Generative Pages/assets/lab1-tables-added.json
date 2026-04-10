@@ -1,0 +1,14 @@
+{
+  "screenshot": "tables-added.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Added tables list",
+      "type": "area",
+      "x": 100,
+      "y": 750,
+      "width": 400,
+      "height": 80
+    }
+  ]
+}

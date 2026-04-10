@@ -1,0 +1,22 @@
+{
+  "screenshot": "data-model.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Data model tables list",
+      "type": "area",
+      "x": 100,
+      "y": 200,
+      "width": 600,
+      "height": 350
+    },
+    {
+      "label": "Show details button",
+      "type": "click",
+      "x": 200,
+      "y": 580,
+      "width": 140,
+      "height": 36
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "screenshot": "lab1-generated-dashboard-preview.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Status cards area",
+      "type": "area",
+      "x": 100,
+      "y": 100,
+      "width": 1720,
+      "height": 200
+    },
+    {
+      "label": "Applications table",
+      "type": "area",
+      "x": 100,
+      "y": 350,
+      "width": 1720,
+      "height": 400
+    }
+  ]
+}

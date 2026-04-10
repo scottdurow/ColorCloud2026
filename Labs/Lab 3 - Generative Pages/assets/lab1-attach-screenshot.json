@@ -1,0 +1,22 @@
+{
+  "screenshot": "lab1-attach-screenshot.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Attach button",
+      "type": "click",
+      "x": 200,
+      "y": 900,
+      "width": 80,
+      "height": 36
+    },
+    {
+      "label": "Add screenshot option",
+      "type": "click",
+      "x": 200,
+      "y": 860,
+      "width": 140,
+      "height": 36
+    }
+  ]
+}

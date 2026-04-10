@@ -1,0 +1,14 @@
+{
+  "screenshot": "start-with-plan.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Start with a plan button",
+      "type": "click",
+      "x": 340,
+      "y": 380,
+      "width": 200,
+      "height": 44
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "screenshot": "describe-page.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Describe a page option",
+      "type": "click",
+      "x": 500,
+      "y": 400,
+      "width": 240,
+      "height": 60
+    }
+  ]
+}

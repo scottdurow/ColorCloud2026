@@ -1,0 +1,38 @@
+{
+  "screenshot": "data-workspace-updated.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Contact table card",
+      "type": "area",
+      "x": 140,
+      "y": 730,
+      "width": 280,
+      "height": 210
+    },
+    {
+      "label": "Job Posting table card",
+      "type": "area",
+      "x": 280,
+      "y": 320,
+      "width": 280,
+      "height": 180
+    },
+    {
+      "label": "Application table card",
+      "type": "area",
+      "x": 560,
+      "y": 320,
+      "width": 280,
+      "height": 180
+    },
+    {
+      "label": "Interview Feedback table card",
+      "type": "area",
+      "x": 840,
+      "y": 320,
+      "width": 280,
+      "height": 180
+    }
+  ]
+}

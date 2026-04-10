@@ -1,0 +1,22 @@
+{
+  "screenshot": "add-page-dialog.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Describe a page button",
+      "type": "click",
+      "x": 260,
+      "y": 248,
+      "width": 160,
+      "height": 120
+    },
+    {
+      "label": "Dataverse table button",
+      "type": "click",
+      "x": 530,
+      "y": 248,
+      "width": 160,
+      "height": 120
+    }
+  ]
+}

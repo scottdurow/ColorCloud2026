@@ -1,0 +1,14 @@
+{
+  "screenshot": "lab1-app-nav-with-gen-pages.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Left navigation showing generative pages",
+      "type": "area",
+      "x": 0,
+      "y": 100,
+      "width": 280,
+      "height": 600
+    }
+  ]
+}

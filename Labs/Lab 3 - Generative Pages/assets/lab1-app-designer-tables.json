@@ -1,0 +1,22 @@
+{
+  "screenshot": "app-designer-tables.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Left navigation with table pages",
+      "type": "area",
+      "x": 0,
+      "y": 100,
+      "width": 280,
+      "height": 500
+    },
+    {
+      "label": "Save button in command bar",
+      "type": "click",
+      "x": 1700,
+      "y": 50,
+      "width": 80,
+      "height": 36
+    }
+  ]
+}

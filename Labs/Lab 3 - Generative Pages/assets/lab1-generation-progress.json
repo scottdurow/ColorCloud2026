@@ -1,0 +1,14 @@
+{
+  "screenshot": "lab1-generation-progress.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Thought streaming panel",
+      "type": "area",
+      "x": 100,
+      "y": 100,
+      "width": 800,
+      "height": 500
+    }
+  ]
+}

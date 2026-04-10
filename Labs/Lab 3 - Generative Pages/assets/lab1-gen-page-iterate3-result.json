@@ -1,0 +1,22 @@
+{
+  "screenshot": "lab1-gen-page-iterate3-result.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Editable Status dropdown column",
+      "type": "field",
+      "x": 1000,
+      "y": 770,
+      "width": 140,
+      "height": 36
+    },
+    {
+      "label": "Actions column with Save button",
+      "type": "click",
+      "x": 1340,
+      "y": 770,
+      "width": 80,
+      "height": 36
+    }
+  ]
+}

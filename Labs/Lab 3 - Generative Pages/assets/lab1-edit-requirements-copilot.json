@@ -1,0 +1,22 @@
+{
+  "screenshot": "edit-requirements-copilot.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Copilot text box",
+      "type": "field",
+      "x": 100,
+      "y": 700,
+      "width": 600,
+      "height": 40
+    },
+    {
+      "label": "Send button",
+      "type": "click",
+      "x": 720,
+      "y": 700,
+      "width": 60,
+      "height": 40
+    }
+  ]
+}

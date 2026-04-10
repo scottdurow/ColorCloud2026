@@ -1,0 +1,22 @@
+{
+  "screenshot": "lab1-dashboard-with-data.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Status cards with counts",
+      "type": "area",
+      "x": 100,
+      "y": 100,
+      "width": 1720,
+      "height": 180
+    },
+    {
+      "label": "Applications table with sample data",
+      "type": "area",
+      "x": 100,
+      "y": 550,
+      "width": 1720,
+      "height": 300
+    }
+  ]
+}

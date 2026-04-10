@@ -1,0 +1,14 @@
+{
+  "screenshot": "create-mda-tile.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Create button on model-driven app tile",
+      "type": "click",
+      "x": 300,
+      "y": 420,
+      "width": 100,
+      "height": 40
+    }
+  ]
+}

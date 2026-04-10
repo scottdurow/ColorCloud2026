@@ -1,0 +1,14 @@
+{
+  "screenshot": "rename-page.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Title field with Recruitment Dashboard",
+      "type": "field",
+      "x": 1530,
+      "y": 565,
+      "width": 310,
+      "height": 40
+    }
+  ]
+}

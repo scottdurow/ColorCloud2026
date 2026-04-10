@@ -1,0 +1,22 @@
+{
+  "screenshot": "data-workspace-diagram.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Table diagram area",
+      "type": "area",
+      "x": 200,
+      "y": 150,
+      "width": 1520,
+      "height": 750
+    },
+    {
+      "label": "Back button",
+      "type": "click",
+      "x": 60,
+      "y": 80,
+      "width": 80,
+      "height": 36
+    }
+  ]
+}

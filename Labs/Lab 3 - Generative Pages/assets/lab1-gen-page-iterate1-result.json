@@ -1,0 +1,22 @@
+{
+  "screenshot": "lab1-gen-page-iterate1-result.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Time to Hire card showing 14 days",
+      "type": "area",
+      "x": 620,
+      "y": 490,
+      "width": 240,
+      "height": 85
+    },
+    {
+      "label": "Status cards row (Open, Closed, Draft)",
+      "type": "area",
+      "x": 620,
+      "y": 340,
+      "width": 700,
+      "height": 100
+    }
+  ]
+}

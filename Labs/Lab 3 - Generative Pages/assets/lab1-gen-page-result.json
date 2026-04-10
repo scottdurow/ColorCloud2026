@@ -1,0 +1,50 @@
+{
+  "screenshot": "gen-page-result.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Active Jobs status card",
+      "type": "area",
+      "x": 700,
+      "y": 275,
+      "width": 440,
+      "height": 130
+    },
+    {
+      "label": "Recent Applications table with status badges",
+      "type": "area",
+      "x": 700,
+      "y": 495,
+      "width": 920,
+      "height": 400
+    }
+  ],
+  "_old":
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Status cards (Open 12, Closed 8, Draft 3)",
+      "type": "area",
+      "x": 620,
+      "y": 340,
+      "width": 700,
+      "height": 100
+    },
+    {
+      "label": "Recent Applications table with status indicators",
+      "type": "area",
+      "x": 620,
+      "y": 495,
+      "width": 700,
+      "height": 250
+    },
+    {
+      "label": "Preview and Code tabs",
+      "type": "click",
+      "x": 1040,
+      "y": 198,
+      "width": 200,
+      "height": 36
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "screenshot": "lab1-generate-page.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Generate page button",
+      "type": "click",
+      "x": 800,
+      "y": 900,
+      "width": 150,
+      "height": 40
+    }
+  ]
+}

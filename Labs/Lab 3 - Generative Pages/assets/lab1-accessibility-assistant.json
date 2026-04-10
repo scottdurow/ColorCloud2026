@@ -1,0 +1,22 @@
+{
+  "screenshot": "lab1-accessibility-assistant.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Accessibility assistant bar",
+      "type": "area",
+      "x": 100,
+      "y": 980,
+      "width": 1720,
+      "height": 50
+    },
+    {
+      "label": "Auto fix button",
+      "type": "click",
+      "x": 1700,
+      "y": 990,
+      "width": 100,
+      "height": 36
+    }
+  ]
+}

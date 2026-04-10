@@ -1,0 +1,14 @@
+{
+  "screenshot": "lab1-save-code-edit.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Save button on Code tab",
+      "type": "click",
+      "x": 1200,
+      "y": 60,
+      "width": 80,
+      "height": 36
+    }
+  ]
+}

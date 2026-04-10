@@ -1,0 +1,22 @@
+{
+  "screenshot": "lab1-ready-to-build.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Model-driven app Create button",
+      "type": "click",
+      "x": 300,
+      "y": 420,
+      "width": 100,
+      "height": 40
+    },
+    {
+      "label": "Objects tab",
+      "type": "click",
+      "x": 500,
+      "y": 100,
+      "width": 80,
+      "height": 36
+    }
+  ]
+}

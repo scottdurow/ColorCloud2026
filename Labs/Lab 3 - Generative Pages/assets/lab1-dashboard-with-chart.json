@@ -1,0 +1,14 @@
+{
+  "screenshot": "lab1-dashboard-with-chart.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Bar chart area",
+      "type": "area",
+      "x": 100,
+      "y": 300,
+      "width": 1720,
+      "height": 250
+    }
+  ]
+}

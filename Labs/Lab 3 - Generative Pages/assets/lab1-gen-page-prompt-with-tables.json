@@ -1,0 +1,46 @@
+{
+  "screenshot": "gen-page-prompt-with-tables.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Prompt textbox with dashboard description",
+      "type": "field",
+      "x": 375,
+      "y": 530,
+      "width": 1100,
+      "height": 60
+    },
+    {
+      "label": "Job Posting table chip",
+      "type": "area",
+      "x": 390,
+      "y": 668,
+      "width": 150,
+      "height": 36
+    },
+    {
+      "label": "Application table chip",
+      "type": "area",
+      "x": 560,
+      "y": 668,
+      "width": 150,
+      "height": 36
+    },
+    {
+      "label": "Contact table chip",
+      "type": "area",
+      "x": 730,
+      "y": 668,
+      "width": 130,
+      "height": 36
+    },
+    {
+      "label": "Generate button",
+      "type": "click",
+      "x": 1510,
+      "y": 745,
+      "width": 40,
+      "height": 36
+    }
+  ]
+}

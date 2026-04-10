@@ -1,0 +1,22 @@
+{
+  "screenshot": "lab1-solution-contents.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Tables in solution",
+      "type": "area",
+      "x": 100,
+      "y": 200,
+      "width": 1720,
+      "height": 250
+    },
+    {
+      "label": "UX Agent Project rows (generative pages)",
+      "type": "area",
+      "x": 100,
+      "y": 500,
+      "width": 1720,
+      "height": 100
+    }
+  ]
+}

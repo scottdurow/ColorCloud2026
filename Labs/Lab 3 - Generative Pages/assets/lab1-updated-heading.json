@@ -1,0 +1,14 @@
+{
+  "screenshot": "lab1-updated-heading.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Updated page heading",
+      "type": "area",
+      "x": 100,
+      "y": 80,
+      "width": 500,
+      "height": 50
+    }
+  ]
+}

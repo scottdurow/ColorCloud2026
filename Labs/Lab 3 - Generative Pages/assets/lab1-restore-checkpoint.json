@@ -1,0 +1,14 @@
+{
+  "screenshot": "restore-checkpoint.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Restore button to go back to previous checkpoint",
+      "type": "click",
+      "x": 240,
+      "y": 530,
+      "width": 120,
+      "height": 36
+    }
+  ]
+}

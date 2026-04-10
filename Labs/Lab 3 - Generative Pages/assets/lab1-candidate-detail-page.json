@@ -1,0 +1,22 @@
+{
+  "screenshot": "lab1-candidate-detail-page.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Candidate profile card",
+      "type": "area",
+      "x": 100,
+      "y": 100,
+      "width": 1720,
+      "height": 200
+    },
+    {
+      "label": "Application timeline",
+      "type": "area",
+      "x": 100,
+      "y": 350,
+      "width": 1720,
+      "height": 400
+    }
+  ]
+}

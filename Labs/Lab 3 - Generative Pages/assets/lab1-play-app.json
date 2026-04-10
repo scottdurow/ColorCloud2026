@@ -1,0 +1,14 @@
+{
+  "screenshot": "lab1-play-app.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Play button in command bar",
+      "type": "click",
+      "x": 1820,
+      "y": 50,
+      "width": 80,
+      "height": 36
+    }
+  ]
+}

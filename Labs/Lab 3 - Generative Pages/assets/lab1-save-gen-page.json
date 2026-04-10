@@ -1,0 +1,14 @@
+{
+  "screenshot": "lab1-save-gen-page.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Save button in command bar",
+      "type": "click",
+      "x": 1700,
+      "y": 50,
+      "width": 80,
+      "height": 36
+    }
+  ]
+}

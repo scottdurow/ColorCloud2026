@@ -1,0 +1,22 @@
+{
+  "screenshot": "enter-prompt.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Prompt text box",
+      "type": "field",
+      "x": 360,
+      "y": 340,
+      "width": 720,
+      "height": 160
+    },
+    {
+      "label": "Generate button",
+      "type": "click",
+      "x": 1000,
+      "y": 520,
+      "width": 120,
+      "height": 40
+    }
+  ]
+}

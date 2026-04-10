@@ -1,0 +1,14 @@
+{
+  "screenshot": "lab1-save-tables.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Save tables button",
+      "type": "click",
+      "x": 400,
+      "y": 600,
+      "width": 140,
+      "height": 40
+    }
+  ]
+}

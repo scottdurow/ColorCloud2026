@@ -1,0 +1,22 @@
+{
+  "screenshot": "user-requirements.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "User roles list",
+      "type": "area",
+      "x": 100,
+      "y": 200,
+      "width": 600,
+      "height": 400
+    },
+    {
+      "label": "Visual diagram",
+      "type": "area",
+      "x": 800,
+      "y": 200,
+      "width": 600,
+      "height": 400
+    }
+  ]
+}

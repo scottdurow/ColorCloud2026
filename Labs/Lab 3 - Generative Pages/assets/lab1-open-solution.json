@@ -1,0 +1,22 @@
+{
+  "screenshot": "lab1-open-solution.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Solutions in left navigation",
+      "type": "click",
+      "x": 30,
+      "y": 350,
+      "width": 160,
+      "height": 36
+    },
+    {
+      "label": "Recruitment solution row",
+      "type": "click",
+      "x": 500,
+      "y": 300,
+      "width": 400,
+      "height": 40
+    }
+  ]
+}

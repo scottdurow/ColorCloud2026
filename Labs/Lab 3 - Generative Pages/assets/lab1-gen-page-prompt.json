@@ -1,0 +1,22 @@
+{
+  "screenshot": "lab1-gen-page-prompt.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Prompt text with recruitment dashboard description",
+      "type": "field",
+      "x": 330,
+      "y": 490,
+      "width": 700,
+      "height": 80
+    },
+    {
+      "label": "Generate button (arrow icon)",
+      "type": "click",
+      "x": 1310,
+      "y": 630,
+      "width": 40,
+      "height": 40
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "screenshot": "code-tab.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Code tab",
+      "type": "click",
+      "x": 1100,
+      "y": 60,
+      "width": 80,
+      "height": 36
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "screenshot": "lab1-save-and-publish.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Save and Publish button",
+      "type": "click",
+      "x": 1750,
+      "y": 50,
+      "width": 150,
+      "height": 36
+    }
+  ]
+}

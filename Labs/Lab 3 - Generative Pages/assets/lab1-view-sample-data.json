@@ -1,0 +1,30 @@
+{
+  "screenshot": "view-sample-data.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Hide data button",
+      "type": "click",
+      "x": 530,
+      "y": 148,
+      "width": 120,
+      "height": 36
+    },
+    {
+      "label": "Job Posting tab",
+      "type": "area",
+      "x": 80,
+      "y": 516,
+      "width": 140,
+      "height": 36
+    },
+    {
+      "label": "Sample data grid",
+      "type": "area",
+      "x": 80,
+      "y": 570,
+      "width": 870,
+      "height": 280
+    }
+  ]
+}

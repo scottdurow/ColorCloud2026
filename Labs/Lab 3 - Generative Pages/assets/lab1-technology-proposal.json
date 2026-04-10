@@ -1,0 +1,30 @@
+{
+  "screenshot": "technology-proposal.png",
+  "resolution": { "width": 1920, "height": 1080 },
+  "highlights": [
+    {
+      "label": "Model-driven app tile",
+      "type": "area",
+      "x": 200,
+      "y": 300,
+      "width": 300,
+      "height": 180
+    },
+    {
+      "label": "Information icon",
+      "type": "click",
+      "x": 480,
+      "y": 310,
+      "width": 24,
+      "height": 24
+    },
+    {
+      "label": "Looks good button",
+      "type": "click",
+      "x": 400,
+      "y": 600,
+      "width": 140,
+      "height": 40
+    }
+  ]
+}
