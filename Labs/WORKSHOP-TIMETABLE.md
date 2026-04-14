@@ -146,13 +146,13 @@ Continue working on any unfinished labs, or explore:
 
 Available at any point during the workshop — especially while waiting for agents to finish tasks in Labs 3 or 4. Takes ~20 minutes. Build a similar event schedule management app in Vibe Apps and compare the results.
 
-See: [Side Quest - Vibe Apps](Side%20Quest%20-%20Vibe%20Apps/Side%20Quest%20-%20Vibe%20Apps.md)
+See: [Side Quest - Vibe Apps](Side%20Quest%20-%20Vibe%20Apps/README.md)
 
 ### Code Apps
 
 Takes ~60 minutes. Plan and build a full Power Apps Code App using the Consultant and Developer agents. Best attempted during free lab time or if you finish Labs 3–4 early.
 
-See: [Side Quest - Code Apps](Side%20Quest%20-%20Code%20Apps/Side%20Quest%20-%20Code%20Apps.md)
+See: [Side Quest - Code Apps](Side%20Quest%20-%20Code%20Apps/README.md)
 
 ---
 
